@@ -7,28 +7,20 @@
 <h6>Please input two numbers, one in each box, then select an arithmetic method you would like to perform.</h6><br>
 </div>
 
-<input id="box10" size="25"><br>
-<!-- <input id="box2"><br> -->
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="box1">1st Number</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div><br>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="box2" >2nd Number</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
-</div><br>
-<button onclick="add()" type="button" class="btn btn-primary" >Add (+)</button>
+<label>Enter first number 
+<input id="box1" type = "number" size= "25"><br>
+</label>
+<label>Enter second number
+<input id="box2" type = "number" size="25"><br>
+</label>
+<br>
+<button onclick = "add()">Add</button>
 <button onclick="subt()" type="button" class="btn btn-secondary">Subtract (-)</button>
 <button onclick="mult()" type="button" class="btn btn-success">Multiply (X)</button>
 <button onclick="divi()" type="button" class="btn btn-danger">Divide (/) </button><br>
 <br>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="results">Results</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+<div>
+  <label>Results: 
+    <span id="results">results</span><br>
+  </label>
 </div>
