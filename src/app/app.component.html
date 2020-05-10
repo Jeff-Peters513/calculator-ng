@@ -1,10 +1,13 @@
 <br>
+<div style = "text-align: center;">
+      <h5>Welcome to the {{ title }} application!</h5>
+</div> <br>
 
-    <span>Welcome to the {{ title }} application!</span><br>
-<br>
-<h6>Please input two numbers, one in each box then select an arithmetic method you would like to perform.</h6><br>
+<div style = "text-align: center;">
+<h6>Please input two numbers, one in each box, then select an arithmetic method you would like to perform.</h6><br>
+</div>
 
-<!-- <input id="box1"><br> -->
+<input id="box10" size="25"><br>
 <!-- <input id="box2"><br> -->
 <div class="input-group mb-3">
   <div class="input-group-prepend">
@@ -14,14 +17,14 @@
 </div><br>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="Box2" >2nd Number</span>
+    <span class="input-group-text" id="box2" >2nd Number</span>
   </div>
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" >
 </div><br>
-<button type="button" class="btn btn-primary" id="add" size="30">Add (+)</button>
-<button type="button" class="btn btn-secondary" id="sub">Subtract (-)</button>
-<button type="button" class="btn btn-success" id="mult">Multiply (X)</button>
-<button type="button" class="btn btn-danger" id ="div">Divide (/) </button><br>
+<button onclick="add()" type="button" class="btn btn-primary" >Add (+)</button>
+<button onclick="subt()" type="button" class="btn btn-secondary">Subtract (-)</button>
+<button onclick="mult()" type="button" class="btn btn-success">Multiply (X)</button>
+<button onclick="divi()" type="button" class="btn btn-danger">Divide (/) </button><br>
 <br>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
