@@ -7,20 +7,26 @@
 <h6>Please input two numbers, one in each box, then select an arithmetic method you would like to perform.</h6><br>
 </div>
 
-<label>Enter first number 
-<input id="box1" type = "number" size= "25"><br>
-</label>
-<label>Enter second number
-<input id="box2" type = "number" size="25"><br>
-</label>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Enter 1st number:<input [(ngModel)]="box1" type="number"></span>
+  </div>
+ </div>
+ <div class="input-group">
+  <div class="input-group-prepend" >
+    <span class="input-group-text">Enter 2nd number:<input [(ngModel)]="box2" type="number"></span>
+  </div>
+ </div>
+
 <br>
-<button onclick = "add()">Add</button>
-<button onclick="subt()" type="button" class="btn btn-secondary">Subtract (-)</button>
-<button onclick="mult()" type="button" class="btn btn-success">Multiply (X)</button>
-<button onclick="divi()" type="button" class="btn btn-danger">Divide (/) </button><br>
+<button (click) ="add()" type="button" class="btn btn-info">Add (+)</button>
+<button (click)="subt()" type="button" class="btn btn-secondary">Subtract (-)</button>
+<button (click)="mult()" type="button" class="btn btn-success">Multiply (X)</button>
+<button (click)="divi()" type="button" class="btn btn-danger">Divide (/) </button><br>
 <br>
 <div>
-  <label>Results: 
-    <span id="results">results</span><br>
-  </label>
+ ===>Results: <input [(ngModel)]="results" size= "25"><br>
 </div>
+
+ <!-- Enter first number <input [(ngModel)]="box1" type="number"><br>
+ Enter second number <input [(ngModel)]="box2" type="number"><br> -->
